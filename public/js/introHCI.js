@@ -53,8 +53,8 @@ function addProject(result) {
 
 function callBackFn(result) {
 
-	var buf = '<img src="' + result.image + '" class = "detailsImage"' + '<p>' + result.title 
+	var projectHTML = '<img src="' + result.image + '" class = "detailsImage"' + '<p>' + result.title 
 	+ '</p>' + '<p>' + result.date + '</p>' + '<p>' + result.summary + '</p>';
 
-	$("#project" + result.id + ".details").html(buf);
+	$("#project" + result.id + ".details").html(projectHTML);
 }
